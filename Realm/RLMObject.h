@@ -207,6 +207,7 @@ NS_ASSUME_NONNULL_BEGIN
  @see   `defaultPropertyValues`, `primaryKey`
  */
 + (instancetype)createOrUpdateInDefaultRealmWithValue:(id)value;
++ (instancetype)createOrUpdateChangedInDefaultRealmWithValue:(id)value;
 
 /**
  Creates or updates an Realm object within a specified Realm.
@@ -243,6 +244,7 @@ NS_ASSUME_NONNULL_BEGIN
  @see   `defaultPropertyValues`, `primaryKey`
  */
 + (instancetype)createOrUpdateInRealm:(RLMRealm *)realm withValue:(id)value;
++ (instancetype)createOrUpdateChangedInRealm:(RLMRealm *)realm withValue:(id)value;
 
 #pragma mark - Properties
 
